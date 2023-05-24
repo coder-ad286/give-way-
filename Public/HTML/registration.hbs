@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="Assets/jquery.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	<header>
+            <div class="header bg-primary text-center">
+     	    <h1>Giveaway Registration</h1>
+			
+			<div class="login">
+     	       <a class="btn btn-success" href="#">Login</a>
+		    </div>
+        </div>  
+		
+	    </header>
+	<div class="container">
+        
+	</div>
+	<div class="container-md">
+	
+		<div class="card">
+			<div class="card-body">
+			   	<form method="POST" action="http://localhost:3000/GiveawayFormPost">
+
+		            <div class="row">
+			        <div class="col-sm-6">
+						<div class="name form-group mt-3">
+			         	<label for="name">Name</label>
+				        <input type="text" placeholder="Enter fullname" id="name" class="form-control" name="name" required>
+					</div>
+                    <div class="gender form-group mt-3">
+
+						<label><input type="radio" name="gender" value="male" required>Male</label>
+						<label><input type="radio" name="gender" value="female"required>Female</label>
+					</div>
+					<div class="number form-group mt-3">
+						<label for="number">Phone no</label>
+						<input type="number" id="number" min="10"  placeholder="mobile number:" class="form-control" name="number" required>
+					</div>	
+					<div class="skills form-group mt-3">
+						<lable for="skill">Skill</lable>
+						<textarea id="skill" placeholder="seperate by semi-colan" class="form-control" name="skills" required></textarea>
+					</div>	
+
+
+					</div>
+					
+			
+			        <div class="col-sm-6">
+						<div class="dob form-group mt-3">
+				        <label for="dob">DOB</label>
+			         	<input type="date" name="dob" class="form-control" required >
+					    </div>
+						<div class="email form-group mt-3">
+							<label for="email">E-mail</label>
+							<input type="email" name="email" id="email" placeholder="enter email"class="form-control"  required>
+						</div>
+						<div class="exp form-group mt-3">
+							<label for="exp">Experience</label>
+							<input type="text" name="exp"id="exp"class="form-control" placeholder="example: 3 years"  required>
+
+						</div>
+						<div class="needs form-group mt-3">
+							<label for="needs">Why you need?</label>
+							<textarea id="needs" name="needs"></textarea>
+						</div>
+			        </div>
+	            </div>
+	            <div class="button text-center form-group mt-5">
+		<button type="submit"class=" btn btn-success">Submit</button>
+	
+      </div>
+	</form>
+	
+    </div>
+
+    </div>
+</div>
+
+ <script type="text/javascript" src="/registration.js"></script>
+</body>
+</html>

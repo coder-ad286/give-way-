@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Sans:wght@700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="AdminDashboard.css">
+</head>
+<body>
+      <header>
+	  	<h1>Admin Dasboard</h1>
+	  	<a href="http://localhost:3000/GiveawayForm">Back</a>
+	  	<a href="http://localhost:3000/AdminLogin" id="logout">Logout</a>
+	  	<h4><i class="fa-sharp fa-solid fa-user" style="color: #fafafa;"></i></h4>
+	  </header>
+	  {{#if status}}
+	      <div class="notexist">
+			<h3>No Applications Exists</h3>
+		  </div>
+	  {{/if}}
+	  {{#if data}}
+	      <div class="exist">
+			<main>
+				<table border="2">
+					<thead>
+						<tr>
+							<th>S.No</th>
+							<th>Name</th>
+							<th>DOB & Gender</th>
+							<th>Contact</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						{{#each data}}
+						<tr>
+							<td class="rollno">{{@index}}</td>
+							<td>{{this.name}}</td>
+							<td>
+								<div>{{this.dob}}</div>
+								<div>{{this.gender}}</div>
+							</td>
+							<td>
+								<div>{{this.phoneno}}</div>
+								<div>{{this.email}}</div>
+							</td>
+							<td>
+								<a href="/view?id={{this._id}}"class="view">View</a>
+								<a href="/delete?id={{this._id}}"+ class="delete">Delete</a>
+							</td>
+						</tr>
+						{{/each}}
+					</tbody>
+				</table>
+				
+			</main>
+		</div>
+	  {{/if}} 
+
+	  {{#if view}}
+			<div class="information">
+						<h1>APPLICANT INFO</h1>
+						<a href="/AdminDashboard">X</a>
+						<div class="info">
+							<h4>Name       : {{info.name}}</h4>
+							<h4>DOB        : {{info.dob}}</h4>
+							<h4>Gender     : {{info.gender}}</h4>
+							<h4>Phone      : {{info.phoneno}}</h4>
+							<h4>E-Mail     : {{info.email}}</h4>
+							<h4>Experience : {{info.experience}}</h4>
+							<h4>Skills     :  {{#each info.skills}}
+								<span>{{this}}</span>,
+								{{/each}}
+							</h4>
+							<h4>Needs      : {{info.needs}}</h4>
+						</div>		
+			</div>
+	 {{/if}}
+      <script type="text/javascript" src="AdminDashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+	font-family: 'Poppins',sans-serif;
+}
+}
+body{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+	background:royalblue;
+	width: 1550px;
+	position: relative;
+	bottom: 10px;
+	right: 20px;
+}
+
+header>h1{
+	font-size: 30px;
+	position: relative;
+    left: 550px;
+    top: 20px;
+    letter-spacing: 3px;
+}
+header>a{
+	position: relative;
+    left: 300px;
+    bottom: 20px;
+    text-decoration: none;
+    background: white;
+     color: black;
+     padding: 5px 10px;
+     border-radius: 5px;
+     font-size: 14px;
+}	
+body{
+
+	width: 100%;
+	height: 100vh;
+	background:#D3D3D3;
+}
+main{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background: white;
+	width: 300px;
+	height: 400px;
+	position: relative;
+	left: 480px;
+	padding: 10px;
+	border-radius: 20px;
+	top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+main>h2{
+	letter-spacing: 2px;
+	position: relative;
+	bottom: 70px;
+}
+main>form{
+	position: relative;
+	bottom: 30px;
+}
+div>label{
+	position: relative;
+	left: 15px;
+}
+div>input{
+	margin-top: 5px;
+	margin-left:30px ;
+	border:none;
+	border-bottom: 2px solid black;
+	outline: none;
+	width: 260px;
+	
+
+}
+button{
+	cursor: pointer;
+	margin: auto;
+	position: relative;
+	top: 50px;
+	left: 120px;
+	background: royalblue;
+	border-radius:10px;
+	padding: 4px 10px;
+}
+.password{
+	position: relative;
+	top: 20px;
+}
+
+h5{
+	position: relative;
+	top: 30px;
+	color: red;
+}

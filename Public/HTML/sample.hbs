@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="/registration.css">
+</head>
+<body>
+     <div class="container">
+        <header>
+     	<h1>Giveaway Rergistration</h1>
+     	<a href="#">Login</a>
+        </header>
+     	<form method="POST" action="http://localhost:3000/GiveawayFormPost">
+
+     	   <div class="name" name="name">
+	     	   <label for="name">Name </label>	
+		        <input id="name" name="name" type="text" placeholder="Enter Name : "required>
+     	   </div>
+
+     	   <div class="dob">
+     	   	  <label for="dob">Date Of Birth </label>
+     	   	  <input type="Date" id="dob" name="dob">
+     	   </div>
+
+     	   <div class="gender">
+	        	<label><input type="radio" name="gender" value="male">Male</label>
+	          <label><input type="radio" name="gender" value="female">Female</label>
+	        </div>
+
+     	   <div class="email">
+     	     <label for="email">E-Mail </label>
+     	   	<input type="email" id="email" name="email" placeholder="Email : ">
+     	   </div>
+
+     	   <div class="number">
+     	   	<label for="number">Phone No </label>
+     	   	<input type="number" name="number" id="number" placeholder="Mobile Number:" required>
+     	   </div>
+	        	        
+	        <div class="exp">
+	        	<label for="exp">Experience </label>
+	        	<input id="exp" type="text" name="exp" placeholder="example : 3 years">
+	        </div>
+
+	        <div class="skills">
+	        	<label for="skill">Skills </label>
+	        	<textarea id="skils"placeholder="seperate by semi-colan" name="skills"></textarea>
+	        </div>
+
+	        <div class="needs">
+	        	<label for="need">Why You Need ? </label>
+	        	<textarea id="needs" name="needs"></textarea>
+	        </div>
+	     <input type="submit">
+     	</form>
+     </div>
+     <script type="text/javascript" src="/registration.js"></script>
+</body>
+</html> 

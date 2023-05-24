@@ -1,0 +1,125 @@
+*{
+	font-family: 'Poppins',sans-serif;
+}
+}
+body{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+	background:royalblue;
+	width: 1550px;
+	position: relative;
+	bottom: 10px;
+	right: 20px;
+}
+
+header>h1{
+	font-size: 25px;
+	position: relative;
+    left: 550px;
+    top: 20px;
+}
+header>a{
+	position: relative;
+    left: 300px;
+    bottom: 20px;
+    text-decoration: none;
+    background: white;
+     color: black;
+     padding: 5px 10px;
+     border-radius: 5px;
+     font-size: 14px;
+}	
+table{
+	position: relative;
+	left: 80px;
+	top: 30px;
+	width: 90%;
+	text-align: center;
+}
+.view{
+	background: royalblue;
+	text-decoration: none;
+	color: white;
+	padding: 5px 8px;
+	border-radius: 10px;
+	margin: 5px;
+}
+.delete{
+	background: red;
+	text-decoration: none;
+	color: white;
+	padding: 5px 8px;
+	border-radius: 10px;
+	margin: 5px;
+}
+.information{
+	background: royalblue;
+    width: 500px;
+    position: relative;
+    left: 450px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.information>h1{
+	font-size: 23px;
+	color: white;
+    position: relative;
+    left: 150px;
+    letter-spacing: 2px;
+}
+.information>a{
+	width: 30px;
+	text-decoration: none;
+	background: red;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	bottom: 40px;
+	left: 450px;
+
+}
+.info{
+	position: relative;
+	left: 40px;
+}
+
+h3{
+	background: #D3D3D3;
+	width: 300px;
+	text-align: center;
+	padding: 100px;
+	position: relative;
+	left: 400px;
+	top: 100px;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+header>h4{
+	position: relative;
+	left: 1230px;
+	bottom: 60px;
+	margin: 5px;
+}
+#logout{
+	cursor: pointer;
+	position: relative;
+	left: 1200px;
+	top: 10px;
+
+}
+
+
+
+
+
+
+
+

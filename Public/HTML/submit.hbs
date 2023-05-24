@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Submit</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Sans:wght@700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="/submit.css">
+
+</head>
+<body>
+	<header>
+	  	<h1>ADMIN DASHBOARD</h1>
+	  	<a href="http://localhost:3000/GiveawayForm">Back</a>
+	</header>
+	{{#if submited}}
+	<div class="submited" hidden>
+		<h2>Application is Submited</h2>
+		<i class="fa-solid fa-thumbs-up fa-bounce fa-2xl" style="color: #56d54d;"></i>
+		<h5>If you're selected, Our team will be contacted you.</h5>
+		<a href="http://localhost:3000/GiveawayForm">Back</a>
+	</div>
+	{{/if}}
+	{{#if unsubmited}}
+	<div class="unsubmited">
+		<h2>Application is Already Submited</h2>
+		<i class="fa-solid fa-thumbs-down fa-bounce fa-2xl" style="color: #FF0000;"></i>
+		<h5>Please Check Phone Number or Email</h5>
+		<a href="http://localhost:3000/GiveawayForm">Back</a>
+	</div>
+	{{/if}}
+</body>
+</html>
