@@ -15,14 +15,14 @@
 <body>
 	<header>
 	  	<h1>ADMIN DASHBOARD</h1>
-	  	<a href="http://localhost:3000/GiveawayForm">Back</a>
+	  	<a href="/GiveawayForm">Back</a>
 	</header>
 	{{#if submited}}
 	<div class="submited" hidden>
 		<h2>Application is Submited</h2>
 		<i class="fa-solid fa-thumbs-up fa-bounce fa-2xl" style="color: #56d54d;"></i>
 		<h5>If you're selected, Our team will be contacted you.</h5>
-		<a href="http://localhost:3000/GiveawayForm">Back</a>
+		<a href="/GiveawayForm">Back</a>
 	</div>
 	{{/if}}
 	{{#if unsubmited}}
@@ -30,7 +30,7 @@
 		<h2>Application is Already Submited</h2>
 		<i class="fa-solid fa-thumbs-down fa-bounce fa-2xl" style="color: #FF0000;"></i>
 		<h5>Please Check Phone Number or Email</h5>
-		<a href="http://localhost:3000/GiveawayForm">Back</a>
+		<a href="/GiveawayForm">Back</a>
 	</div>
 	{{/if}}
 </body>
