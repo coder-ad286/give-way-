@@ -6,10 +6,10 @@ loginEl.addEventListener("click",()=>{
 	const password = localStorage.getItem("password");
 	
 	if(username==null){
-		window.location.href="http://localhost:3000/AdminLogin";
+		window.location.href="/AdminLogin";
 	}
 	else{
-		window.location.href="http://localhost:3000/AdminDashboard";
+		window.location.href="/AdminDashboard";
 	}
 
 })
